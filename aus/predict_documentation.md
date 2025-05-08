@@ -1,12 +1,12 @@
 
-# 🏎️ Previsão de Tempos de Volta na F1 - Script `predict.py`
+# Previsão de Tempos de Volta na F1 - Script `predict.py`
 
-## 📌 Objetivo
+## Objetivo
 Este script visa prever os tempos de volta de pilotos da Fórmula 1 (especificamente Verstappen e Norris na corrida de 2025) utilizando dados de sessões anteriores como FP1, FP2, FP3 e Qualifying. Ele emprega modelos de machine learning combinados com modelagem de resíduos via ARIMA para melhorar a acurácia das previsões.
 
 ---
 
-## 📦 Bibliotecas Utilizadas
+##  Bibliotecas Utilizadas
 
 - `fastf1`: Carregamento de dados de sessões da Fórmula 1.
 - `pandas`, `numpy`: Manipulação de dados.
@@ -19,7 +19,7 @@ Este script visa prever os tempos de volta de pilotos da Fórmula 1 (especificam
 
 ---
 
-## 🔁 Fluxo Principal do Script
+##  Fluxo Principal do Script
 
 ### 1. Carregamento de Sessões
 Função: `load_sessions()`  
@@ -66,7 +66,7 @@ Executa todo o fluxo anterior:
 
 ---
 
-## 📊 Métricas Apresentadas
+##  Métricas Apresentadas
 
 - **MAE (Erro Absoluto Médio)**
 - **MAPE (Erro Percentual Absoluto Médio)**
@@ -75,7 +75,7 @@ Executa todo o fluxo anterior:
 
 ---
 
-## 📈 Saídas Visuais
+##  Saídas Visuais
 
 - Gráfico 1: Previsão de tempo de volta para próximas 15 voltas.
 - Gráfico 2: Gap acumulado entre Verstappen e Norris.
@@ -83,13 +83,13 @@ Executa todo o fluxo anterior:
 
 ---
 
-## 📁 Requisitos de Entrada
+##  Requisitos de Entrada
 
 - Dados da biblioteca `fastf1` com colunas como: `LapTime`, `LapNumber`, `Compound`, `TyreLife`, `Driver`, `Stint`, etc.
 
 ---
 
-## 🛠️ Sugestões de Melhoria
+##  Sugestões de Melhoria
 
 - Aplicar `GridSearchCV` ou `Optuna` para ajuste de hiperparâmetros.
 - Persistência dos modelos com `joblib`.
@@ -97,5 +97,3 @@ Executa todo o fluxo anterior:
 - Inclusão de variáveis climáticas e de pista.
 
 ---
-
-© Desenvolvido com FastF1 + Scikit-learn + Statsmodels
