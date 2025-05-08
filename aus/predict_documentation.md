@@ -88,12 +88,3 @@ Executa todo o fluxo anterior:
 - Dados da biblioteca `fastf1` com colunas como: `LapTime`, `LapNumber`, `Compound`, `TyreLife`, `Driver`, `Stint`, etc.
 
 ---
-
-##  Sugestões de Melhoria
-
-- Aplicar `GridSearchCV` ou `Optuna` para ajuste de hiperparâmetros.
-- Persistência dos modelos com `joblib`.
-- Generalização para múltiplas corridas e temporadas.
-- Inclusão de variáveis climáticas e de pista.
-
----
